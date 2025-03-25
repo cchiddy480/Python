@@ -14,3 +14,7 @@ pieter = Student("Pieter Bruegel the Elder", "Year 8")
 # Creation of new "Grade" class
 class Grade:
     minimum_passing = 65
+
+    # Constructor for the Grade class
+    def __init__(self, score):
+        self.score = score
