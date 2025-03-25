@@ -28,5 +28,12 @@ class Grade:
     def __init__(self, score):
         self.score = score
 
+    # Method to check if the grade is passing
+    def is_passing(self, score):
+        if score >= Grade.minimum_passing:
+           return True
+        else:
+           return False
+
 # Adding grades to a student instance
 pieter.add_grade(Grade(100))
