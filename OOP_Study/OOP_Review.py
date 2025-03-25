@@ -2,9 +2,18 @@
 
 # Class definition with contructor 
 class Student:
+    # Constructor for the Student class
     def __init__(self, name, year):
         self.name = name
         self.year = year
+        self.grades = []
+
+    # Method to add grades to the student instance
+    def add_grade(self, grade):
+      if Grade is type(grade):
+        self.grades.append(grade)
+      
+         
 
 # Creating 3 instances of the Student class
 roger = Student("Roger van der Weyden", "Year 10")
@@ -18,3 +27,6 @@ class Grade:
     # Constructor for the Grade class
     def __init__(self, score):
         self.score = score
+
+# Adding grades to a student instance
+pieter.add_grade(Grade(100))
