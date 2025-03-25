@@ -29,6 +29,7 @@ for data in characters_data:
 for char in character_objects:
     print(f"\nCharacter: {char.name}")
     print("Attributes:")
+    
     # TODO: Loop through char.__dict__ and print attribute names + values
     for key, value in char.__dict__.items():
         print(f"{key}: {value}")
