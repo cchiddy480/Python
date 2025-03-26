@@ -70,4 +70,5 @@ dinner = Menu('Dinner', dinner, 17, 23)
 kids = Menu('Kids', kids, 11, 21)
 
 # Testing the Menu class
-print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
+# print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
+# print(early_bird.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)']))
