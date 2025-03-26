@@ -73,3 +73,31 @@ kids = Menu('Kids', kids, 11, 21)
 # print(brunch.calculate_bill(['pancakes', 'home fries', 'coffee']))
 # print(early_bird.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)']))
 
+# Creating Franchise class
+# Franchise class will have address, menus, and name as attributes
+# Franchise class will have a string representation method
+# Franchise class will store multiple menus
+
+class Frachise:
+    def __init__(self, address, menus):
+        self.address = address
+        self.menus = menus
+
+    # Method to represent Franchise
+    def __repr__(self):
+        return self.name + ' franchise located at ' + self.address
+    
+    # Method to return available menus
+    def available_menus(self, time):
+        available_menus = []
+        for menu in self.menus:
+            if time >= menu.start_time and time <= menu.end_time:
+                available_menus.append(menu)
+        return available_menus
+
+# Testing the Franchise class    
+flagship_store = Frachise("1232 West End Road", [brunch, early_bird, dinner, kids])
+new_installment = Frachise("12 East Mulberry Street", [brunch, early_bird, dinner, kids])
+
+print(flagship_store.available_menus(12))
+print(new_installment.available_menus(17))
