@@ -101,3 +101,4 @@ new_installment = Frachise("12 East Mulberry Street", [brunch, early_bird, dinne
 
 print(flagship_store.available_menus(12))
 print(new_installment.available_menus(17))
+
