@@ -1,4 +1,4 @@
-# This is a simple project ot praciise OOP concepts in Python
+# This is a simple project ot practise OOP concepts in Python
 
 # Scenario: An italian family-style restaurant has expereienced growth and organization needs to be
 # improved via a software solution.
