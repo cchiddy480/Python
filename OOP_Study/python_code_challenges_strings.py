@@ -25,3 +25,13 @@ def count_char_x(word, x):
   return char_count
 
 # print(count_char_x("mississippi", "s"))
+
+# Challenge 3.
+# Count Multi X
+# Create a function which accepts a string and a substring.
+# Return the number of instances the substring appears in the string.
+
+def count_multi_char_x(word, x):
+    return word.count(x)
+
+print(count_multi_char_x("mississippi", "iss"))
