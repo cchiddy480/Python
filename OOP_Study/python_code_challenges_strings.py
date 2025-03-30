@@ -35,3 +35,17 @@ def count_multi_char_x(word, x):
     return word.count(x)
 
 print(count_multi_char_x("mississippi", "iss"))
+
+# Challenge 4.
+# Subsring Between 
+# Creaea a function that that is able to extract a substring between two characters.
+# The function should accept a string and two characters.
+
+def substring_between_letters(word, start, end):
+  start_ind = word.find(start)
+  end_ind = word.find(end)
+  if start != -1 and end != -1:
+    return word[start_ind + 1:end_ind] 
+  return word
+
+# print(substring_between_letters("apple", "p", "e"))
