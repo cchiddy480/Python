@@ -49,3 +49,16 @@ def substring_between_letters(word, start, end):
   return word
 
 # print(substring_between_letters("apple", "p", "e"))
+
+#Challlenge 5.
+# X Length
+# Create a function which returns Truo if every number in the sentence is greater than or equal to x.
+
+def x_length_words(sentence, x):
+  word_list = sentence.split(" ")
+  for word in word_list:
+    if len(word) < x:
+      return False
+    return True
+  
+# print(x_length_words("i like apples", 2))
